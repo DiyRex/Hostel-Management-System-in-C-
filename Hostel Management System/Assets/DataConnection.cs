@@ -18,7 +18,7 @@ namespace Hostel_Management_System.Assets
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=.\Database\HostelDB.mdf;Integrated Security=True";
         }
 
-        public SqlConnection GetConnection()
+        public SqlConnection getConnection()
         {
             if (connection == null)
             {
