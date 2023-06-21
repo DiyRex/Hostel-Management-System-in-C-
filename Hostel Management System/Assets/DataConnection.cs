@@ -33,7 +33,7 @@ namespace Hostel_Management_System.Assets
             return connection;
         }
 
-        public void CloseConnection()
+        public void closeConnection()
         {
             if (connection != null && connection.State == System.Data.ConnectionState.Open)
             {

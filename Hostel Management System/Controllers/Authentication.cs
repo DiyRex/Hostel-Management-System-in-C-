@@ -45,7 +45,7 @@ namespace Hostel_Management_System.Controllers
             }
             finally
             {
-                db.CloseConnection();
+                db.closeConnection();
             }
         }
     }
