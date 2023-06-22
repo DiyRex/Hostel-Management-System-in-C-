@@ -1,0 +1,52 @@
+// Create Table
+
+CREATE TABLE [dbo].[Students]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [FirstName] VARCHAR(50) NULL, 
+    [LastName] VARCHAR(50) NULL, 
+    [Address] TEXT NULL, 
+    [NIC] VARCHAR(50) NULL, 
+    [Birthday] DATE NULL, 
+    [Sex] VARCHAR(50) NULL, 
+    [ContactNumber] VARCHAR(50) NULL, 
+    [Email] VARCHAR(50) NULL, 
+    [GrdFirstName] VARCHAR(50) NULL, 
+    [GrdLastName] VARCHAR(50) NULL, 
+    [GrdNIC] VARCHAR(50) NULL, 
+    [AddedAt] DATETIME NOT NULL DEFAULT(GETDATE())
+)
+
+
+CREATE TABLE [dbo].[Rooms]
+(
+	[RoomId] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [RoomCondition] INT NOT NULL DEFAULT 0, 
+    [BedCount] INT NOT NULL DEFAULT 0, 
+    [Occupied] INT NOT NULL DEFAULT 0, 
+    [AddedAt] DATETIME NOT NULL DEFAULT(GETDATE())
+)
+
+
+CREATE TABLE [dbo].[Staff]
+(
+	[StaffId] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [FirstName] VARCHAR(50) NULL, 
+    [LastName] VARCHAR(50) NULL, 
+    [Address] TEXT NULL, 
+    [NIC] VARCHAR(50) NULL, 
+    [Contact] VARCHAR(50) NULL, 
+    [Role] VARCHAR(50) NULL, 
+    [AddedAt] DATE NOT NULL DEFAULT (GETDATE())
+)
+
+
+CREATE TABLE [dbo].[Admin]
+(
+	[AdminID] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [FirstName] VARCHAR(50) NULL, 
+    [LastName] VARCHAR(50) NULL, 
+    [Username] VARCHAR(50) NULL, 
+    [Password] VARCHAR(50) NULL, 
+    [Email] VARCHAR(50) NULL
+)
