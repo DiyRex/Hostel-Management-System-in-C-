@@ -2,18 +2,17 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Hostel_Management_System.Controllers
 {
-    internal class ReadData
+    internal class DeleteData
     {
         DataConnection db = new DataConnection();
 
-        public DataTable ReadTableData(string tableName)
+        public bool DeleteRecord(string tableName, string idName, int id)
         {
             SqlConnection connection = null;
 
@@ -21,22 +20,18 @@ namespace Hostel_Management_System.Controllers
             {
                 connection = db.getConnection();
 
-                string query = $"SELECT * FROM [dbo].[{tableName}]";
+                string query = $"DELETE FROM [dbo].[{tableName}] WHERE [{idName}] = @Id";
 
                 using (var command = new SqlCommand(query, connection))
                 {
-                    using (var adapter = new SqlDataAdapter(command))
-                    {
-                        var dataTable = new DataTable();
-                        adapter.Fill(dataTable);
-                        return dataTable;
-                    }
+                    command.Parameters.AddWithValue("@Id", id);
+                    command.ExecuteNonQuery();
+                    return true;
                 }
             }
             catch (Exception ex)
             {
-                // Handle the exception as per your requirement
-                return null;
+                return false;
             }
             finally
             {

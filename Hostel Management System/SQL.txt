@@ -13,7 +13,8 @@ CREATE TABLE [dbo].[Students]
     [Email] VARCHAR(50) NULL, 
     [GrdFirstName] VARCHAR(50) NULL, 
     [GrdLastName] VARCHAR(50) NULL, 
-    [GrdNIC] VARCHAR(50) NULL, 
+    [GrdNIC] VARCHAR(50) NULL,
+    [GrdContactNumber] VARCHAR(50) NULL, 
     [AddedAt] DATETIME NOT NULL DEFAULT(GETDATE())
 )
 

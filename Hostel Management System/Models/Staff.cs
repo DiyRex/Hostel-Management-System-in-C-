@@ -56,12 +56,12 @@ namespace Hostel_Management_System.Models
             address = value;
         }
 
-        public string getNic()
+        public string getNIC()
         {
             return nic;
         }
 
-        public void setNic(string value)
+        public void setNIC(string value)
         {
             nic = value;
         }

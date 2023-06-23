@@ -62,12 +62,12 @@ namespace Hostel_Management_System.Models
             address = value;
         }
 
-        public string getNic()
+        public string getNIC()
         {
             return nic;
         }
 
-        public void setNic(string value)
+        public void setNIC(string value)
         {
             nic = value;
         }
@@ -142,12 +142,12 @@ namespace Hostel_Management_System.Models
             grdContactNumber = value;
         }
 
-        public string getGrdNic()
+        public string getGrdNIC()
         {
             return grdNIC;
         }
 
-        public void setGrdNic(string value)
+        public void setGrdNIC(string value)
         {
             grdNIC = value;
         }

@@ -9,11 +9,11 @@ namespace Hostel_Management_System.Models
     internal class Room
     {
         private int roomId;
-        private string roomCondition;
+        private int roomCondition;
         private int bedCount;
-        private bool occupied;
+        private int occupied;
 
-        public int getroomId()
+        public int getRoomId()
         {
             return roomId;
         }
@@ -23,12 +23,12 @@ namespace Hostel_Management_System.Models
             roomId = value;
         }
 
-        public string getRoomCondition()
+        public int getRoomCondition()
         {
             return roomCondition;
         }
 
-        public void setRoomCondition(string value)
+        public void setRoomCondition(int value)
         {
             roomCondition = value;
         }
@@ -43,12 +43,12 @@ namespace Hostel_Management_System.Models
             bedCount = value;
         }
 
-        public bool getOccupied()
+        public int getOccupied()
         {
             return occupied;
         }
 
-        public void setOccupied(bool value)
+        public void setOccupied(int value)
         {
             occupied = value;
         }
