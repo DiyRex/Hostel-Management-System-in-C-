@@ -16,6 +16,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -28,7 +29,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -253,10 +253,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DataConnection.cs" />
+    <Compile Include="Controllers\AddRoom.cs" />
+    <Compile Include="Controllers\AddStaff.cs" />
+    <Compile Include="Controllers\AddStudent.cs" />
     <Compile Include="Controllers\Authentication.cs" />
+    <Compile Include="Controllers\DeleteData.cs" />
     <Compile Include="Controllers\ReadData.cs" />
     <Compile Include="Assets\SessionManagement.cs" />
     <Compile Include="Assets\Validation.cs" />
+    <Compile Include="Controllers\UpdateRoom.cs" />
+    <Compile Include="Controllers\UpdateStaff.cs" />
+    <Compile Include="Controllers\UpdateStudent.cs" />
     <Compile Include="Forms\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,7 +303,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="User Controls\" />
   </ItemGroup>
   <ItemGroup>
@@ -304,9 +310,43 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Database\HostelDB_log.ldf">
-      <DependentUpon>HostelDB.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>HostelDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Images\add_100px.png" />
+    <Content Include="Images\Add_128px.png" />
+    <Content Include="Images\add_60px.png" />
+    <Content Include="Images\add_user_male_64px.png" />
+    <Content Include="Images\air_conditioner_52px.png" />
+    <Content Include="Images\ask_question_100px.png" />
+    <Content Include="Images\automation_64px.png" />
+    <Content Include="Images\available_updates_100px.png" />
+    <Content Include="Images\cancel_128px.png" />
+    <Content Include="Images\cancel_96px.png" />
+    <Content Include="Images\couple_96px.png" />
+    <Content Include="Images\customer_64px.png" />
+    <Content Include="Images\delete_48px.png" />
+    <Content Include="Images\email_send_60px.png" />
+    <Content Include="Images\email_send_96px.png" />
+    <Content Include="Images\fan_52px.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\insomnia_80px.png" />
+    <Content Include="Images\insomnisa_160px.png" />
+    <Content Include="Images\no_usere_64px.png" />
+    <Content Include="Images\no_user_64px.png" />
+    <Content Include="Images\ok_96px.png" />
+    <Content Include="Images\print_64px.png" />
+    <Content Include="Images\profile_48px.png" />
+    <Content Include="Images\profile_60px.png" />
+    <Content Include="Images\resume_48px.png" />
+    <Content Include="Images\sleeping_in_bed_200px.png" />
+    <Content Include="Images\two_beds_64px.png" />
+    <Content Include="Images\unavailable_52px.png" />
+    <Content Include="Images\User Shield_128px.png" />
+    <Content Include="Images\user_shield_48px.png" />
+    <Content Include="Images\user_tag_64px.png" />
+    <Content Include="Images\waste_100px.png" />
+    <Content Include="Images\[CITYPNG.COM]Red Warning Triangle Logo Icon Symbol Sign - 558x558.png" />
     <Content Include="SQL.txt" />
   </ItemGroup>
   <ItemGroup>

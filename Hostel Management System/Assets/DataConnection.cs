@@ -15,7 +15,7 @@ namespace Hostel_Management_System.Assets
         public DataConnection()
         {
             // Set your connection string here
-            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=.\Database\HostelDB.mdf;Integrated Security=True";
+            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\C#\Hostel-Management-System-in-C-\Hostel Management System\Database\HostelDB.mdf"";Integrated Security=True";
         }
 
         public SqlConnection getConnection()
