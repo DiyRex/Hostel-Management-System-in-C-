@@ -28,9 +28,20 @@ namespace Hostel_Management_System.Models
             return roomCondition;
         }
 
-        public void setRoomCondition(int value)
+        public void setRoomCondition(string value)
         {
-            roomCondition = value;
+            if (value == "AC")
+            {
+                roomCondition = 1;
+            }
+            else if (value == "Non AC")
+            {
+                roomCondition= 0;
+            }
+            else
+            {
+                roomCondition = 0;
+            }
         }
 
         public int getBedCount()
@@ -48,9 +59,20 @@ namespace Hostel_Management_System.Models
             return occupied;
         }
 
-        public void setOccupied(int value)
+        public void setOccupied(string value)
         {
-            occupied = value;
+            if (value == "Available")
+            {
+                occupied = 1;
+            }
+            else if (value == "Occupied")
+            {
+                occupied = 0;
+            }
+            else
+            {
+                occupied = 0;
+            }
         }
     }
 

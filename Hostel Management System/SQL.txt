@@ -45,9 +45,25 @@ CREATE TABLE [dbo].[Staff]
 CREATE TABLE [dbo].[Admin]
 (
 	[AdminID] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [FirstName] VARCHAR(50) NULL, 
-    [LastName] VARCHAR(50) NULL, 
     [Username] VARCHAR(50) NULL, 
     [Password] VARCHAR(50) NULL, 
     [Email] VARCHAR(50) NULL
+)
+
+CREATE TABLE [dbo].[Config]
+(
+  [ConfigId] INT NOT NULL PRIMARY KEY IDENTITY,
+  [keymoney` int(11) NOT NULL,
+  [auth_key] varchar(10) NOT NULL,
+  [ac_rent] INT NOT NULL,
+  [non_ac_rent] INT NOT NULL,
+  [non_ac_count] INT NOT NULL,
+  [ac_count] INT NOT NULL,
+  [mail_sender] varchar(55) NOT NULL,
+  [smtp_mail] varchar(55) NOT NULL,
+  [smtp_password] varchar(55) NOT NULL,
+  [smtp_port] INT NOT NULL,
+  [hostel_name] varchar(55) NOT NULL,
+  [max_student_count] INT NOT NULL,
+  [max_bedroom_count] INT NOT NULL
 )
