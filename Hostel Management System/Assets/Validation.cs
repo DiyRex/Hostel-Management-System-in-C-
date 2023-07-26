@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System.Controllers
+namespace Hostel_Management_System.Assets
 {
     internal class Validation
     {
@@ -21,11 +21,11 @@ namespace Hostel_Management_System.Controllers
             }
         }
 
-        public static bool AreAnyTextBoxEmpty(params TextBox[] textBoxes)
+        public static bool AreAnyStringsEmpty(params string[] strings)
         {
-            foreach (TextBox textBox in textBoxes)
+            foreach (string str in strings)
             {
-                if (string.IsNullOrWhiteSpace(textBox.Text))
+                if (string.IsNullOrWhiteSpace(str))
                 {
                     return true;
                 }

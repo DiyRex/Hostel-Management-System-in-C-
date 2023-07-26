@@ -13,7 +13,7 @@ namespace Hostel_Management_System.Models
         private string lastName;
         private string address;
         private string nic;
-        private DateTime birthday;
+        private string birthday;
         private string sex;
         private string contactNumber;
         private string email;
@@ -72,12 +72,12 @@ namespace Hostel_Management_System.Models
             nic = value;
         }
 
-        public DateTime getBirthday()
+        public string getBirthday()
         {
             return birthday;
         }
 
-        public void setBirthday(DateTime value)
+        public void setBirthday(string value)
         {
             birthday = value;
         }
